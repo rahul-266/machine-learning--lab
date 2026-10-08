@@ -1,0 +1,3 @@
+Criterion,TrainAccuracy,TestAccuracy,Depth
+Gini,1.0,0.848801203220384,34
+Entropy,1.0,0.8524285587897018,52

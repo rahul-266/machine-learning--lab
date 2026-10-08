@@ -1,0 +1,49 @@
+Decision Tree Rules
+===================
+
+|--- num__duration <= 521.50
+|   |--- cat__poutcome_success <= 0.50
+|   |   |--- num__age <= 60.50
+|   |   |   |--- num__duration <= 260.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- num__duration >  260.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |--- num__age >  60.50
+|   |   |   |--- num__duration <= 126.00
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- num__duration >  126.00
+|   |   |   |   |--- truncated branch of depth 2
+|   |--- cat__poutcome_success >  0.50
+|   |   |--- num__duration <= 132.50
+|   |   |   |--- num__duration <= 82.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- num__duration >  82.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |--- num__duration >  132.50
+|   |   |   |--- num__duration <= 162.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- num__duration >  162.50
+|   |   |   |   |--- truncated branch of depth 2
+|--- num__duration >  521.50
+|   |--- num__duration <= 827.50
+|   |   |--- cat__poutcome_success <= 0.50
+|   |   |   |--- num__duration <= 648.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- num__duration >  648.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |--- cat__poutcome_success >  0.50
+|   |   |   |--- num__balance <= 4.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- num__balance >  4.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |--- num__duration >  827.50
+|   |   |--- cat__poutcome_success <= 0.50
+|   |   |   |--- num__duration <= 1225.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- num__duration >  1225.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |--- cat__poutcome_success >  0.50
+|   |   |   |--- num__balance <= 1834.00
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- num__balance >  1834.00
+|   |   |   |   |--- truncated branch of depth 2
